@@ -70,5 +70,3 @@ public class MeanMedianModeOptimized {
 	        return mode;
 	    }
 	}
-
-

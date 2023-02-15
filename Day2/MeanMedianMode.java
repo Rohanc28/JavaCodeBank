@@ -38,7 +38,6 @@ public class MeanMedianMode {
         int n = arr.length;
         double median;
 
-        // sort the array
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (arr[i] > arr[j]) {
@@ -49,7 +48,6 @@ public class MeanMedianMode {
             }
         }
 
-        // if the array length is even
         if (n % 2 == 0) {
             median = (double) (arr[(n / 2) - 1] + arr[n / 2]) / 2;
         } else {

@@ -1,5 +1,6 @@
 //https://www.hackerrank.com/challenges/java-anagrams/submissions/code/314504082
-static boolean isAnagram(String a, String b) {  if (a.length() != b.length()) {
+static boolean isAnagram(String a, String b) { 
+        if (a.length() != b.length()) {
             return false;
         }
         a = a.toLowerCase();

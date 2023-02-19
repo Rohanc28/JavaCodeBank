@@ -18,7 +18,7 @@ public class StackUsingArray {
 
     public void push(int element) {
         if (isFull()) {
-            throw new IllegalStateException("Stack is full");
+            System.out.println("Not empty");
         }
         top++;
         stackArray[top] = element;
@@ -26,7 +26,7 @@ public class StackUsingArray {
 
     public int pop() {
         if (isEmpty()) {
-            throw new IllegalStateException("Stack is empty");
+            System.out.println("Empty");
         }
         int lastElement = stackArray[top];
         top--;
@@ -35,7 +35,7 @@ public class StackUsingArray {
 
     public int peek() {
         if (isEmpty()) {
-            throw new IllegalStateException("Stack is empty");
+            System.out.println("Empty");
         }
         return stackArray[top];
     }

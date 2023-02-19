@@ -2,13 +2,10 @@ package Java_Program;
 import java.util.ArrayList;
 public class StackUsingArray {
 
-	public static class Stack {
-
-	public class Stack {
-
-    private int[] stackArray;
-    private int top;
-    private int capacity;
+    public static class Stack {
+   	private int[] stackArray;
+    	private int top;
+    	private int capacity;
 
     public Stack(int capacity) {
         stackArray = new int[capacity];

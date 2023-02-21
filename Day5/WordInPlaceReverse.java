@@ -2,12 +2,13 @@ import java.util.*;
 
 public class WordInPlaceReverse {
     public static void main(String[] args) {
+        
         String input = "Apple ball cat apple ball cat java program google gmail clock google ApPle";
         String str="";
         String revWord= "";
         input = input.toLowerCase();
 
-        String[] words = input.split("\\s+");
+        String[] words = input.split("\\s+");  //create array of strings of words from the orginal string
 
         Map<String, Integer> frequencyMap = new HashMap<>();
         char ch;

@@ -1,4 +1,3 @@
-
 import java.util.*; 
 
 public class FirstNonRepeatChar {
@@ -22,6 +21,9 @@ public class FirstNonRepeatChar {
     }
     return null;
     }
+  
+  
+  
     public static void main(String[] args)
     {
         Scanner scan=new Scanner(System.in);

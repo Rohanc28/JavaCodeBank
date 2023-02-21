@@ -1,5 +1,5 @@
-
 import java.util.*; 
+
 public class WithoutEqualsCompare {
   
     static void usingXor(int a, int b){

@@ -1,9 +1,10 @@
 import java.util.*;
 
 public class WordFreq {
-    public static void main(String[] args) {
-        scanner s=new Scanner(System.in);
-        //String input=s.nextLine();
+    public static void main(String[] args) 
+        
+        //scanner scan=new Scanner(System.in);
+        
         String input = "Apple ball cat apple ball cat java program google gmail clock google ApPle";
 
         input = input.toLowerCase();

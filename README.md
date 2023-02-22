@@ -8,5 +8,5 @@ JavaCodeBank is a repository that contains a collection of Java code examples an
 - [x] Day 2 Problems
 - [x] Day 3 Problems
 - [x] Day 4 Problems
-- [ ] Day 5 Problems
+- [X] Day 5 Problems
   

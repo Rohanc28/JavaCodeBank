@@ -63,7 +63,6 @@ public class QueueUsingArray {
         }
     }
 }
-
 	public static void main(String[] args) {
 		Queue q= new Queue(5);
 		q.enqueue(0);

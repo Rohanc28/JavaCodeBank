@@ -9,9 +9,10 @@ import java.io.ObjectStreamException;
 import java.io.Serializable;
 
 public class OvercomingSingletonSingleObjectLimit {
-    public static class Singleton implements Serializable {
+    public static class Singleton implements Serializable {//creating serializable class
 
-        private static final long serialVersionUID = 1L;
+
+        private static final long serialVersionUID = 1L; //important, otherwise compiler gives warning
         private static Singleton instance;
 
         private Singleton() {// to prevent direct instantiation
@@ -64,6 +65,8 @@ public class OvercomingSingletonSingleObjectLimit {
         }
     }
 
+    
+    
     public static void main(String[] args) {
         Singleton singleton = Singleton.getInstance();
         singleton.doSomething();

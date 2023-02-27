@@ -1,18 +1,17 @@
 package Java_Program;
-import java.util.Scanner;
 
-class ShallowCopyClass{
-    public int dataField =100;
-}
-
-public class ShallowCopy{
-  public static void main(String[] args){
-    //Scanner scan=new Scanner(System.in);
-    ShallowCopyClass copyObject1=new ShallowCopyClass();
-    ShallowCopyClass copyObject2=copyObject1;
-    //on change to one object, change occurs in all objects due to reference
-    copyObject2.dataField=0;
-    System.out.println("Obj1: "+copyObject1.dataField);
-    
-    }
-}
+class ShallowCopy  {  
+    int x = 1;  
+}  
+public class ShallowCopyExample   {
+    public static void main(String argvs[])  {   
+        //Scanner scan=new Scanner(System.in);
+        ShallowCopy obj1 = new ShallowCopy();  
+  
+        ShallowCopy obj2 = obj1;  
+  
+        obj2.x = 2;  
+  
+        System.out.println("The value of x is: " + obj1.x);  
+    }  
+}   

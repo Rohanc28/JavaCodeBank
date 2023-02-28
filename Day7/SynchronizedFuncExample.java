@@ -43,6 +43,7 @@ public static class Thread1 extends Thread{
 		Thread1 thread1Obj = new Thread1(newObj);
 		Thread2	thread2Obj = new Thread2(newObj);
 		thread1Obj.start();
+		System.out.prinln("THREAD 2 TIME!");
 		thread2Obj.start();
 	}
 

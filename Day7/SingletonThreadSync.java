@@ -2,13 +2,13 @@ public class SingletonThreadSync {
 
     public static void main(String[] args) {
         
-        // Start a new thread to generate the Singleton object
+        //  new thread to generate the Singleton object
         Thread singletonGeneratorThread = new Thread(() -> {
             SingletonObject singleton = SingletonObject.getInstance();
         });
         singletonGeneratorThread.start();
 
-        // Create three reader threads
+        // three reader threads
         Thread readerThread1 = new Thread(() -> {
             SingletonObject singleton = SingletonObject.getInstance();
             synchronized (singleton) {
@@ -29,11 +29,11 @@ public class SingletonThreadSync {
             SingletonObject singleton = SingletonObject.getInstance();
             synchronized (singleton) {
                 System.out.println("Thread 3 is reading the Singleton object");
-                // Perform some operation on the Singleton object here
+                
             }
         });
 
-        // Start the reader threads
+        // interviewer reader threads
         readerThread1.start();
         readerThread2.start();
         readerThread3.start();
@@ -41,11 +41,11 @@ public class SingletonThreadSync {
 }
 
 class SingletonObject {
-    // This is the Singleton object
+    // Singleton object
     private static SingletonObject instance;
 
     private SingletonObject() {
-        // Private constructor to prevent direct instantiation
+        System.out.println("No direct instantiation allowed");
     }
 
     public static SingletonObject getInstance() {

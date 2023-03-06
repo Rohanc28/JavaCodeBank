@@ -17,7 +17,7 @@ public class Engine {
 
 }
 
-public class CompositionExample {
+public class Composition {
     public static void main(String[] args) {
         Car car = new Car();
         car.start();

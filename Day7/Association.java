@@ -29,7 +29,7 @@ public class Address {
 
 }
 
-public class AssociationExample {
+public class Association {
     public static void main(String[] args) {
         Address address = new Address("123 Main St", "Anytown", "CA", 12345);
         Person person = new Person("John", 30, address);

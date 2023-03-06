@@ -1,4 +1,4 @@
-class Car {
+public class Car {
     private Engine engine;
 
     public Car() {
@@ -8,16 +8,13 @@ class Car {
     public void start() {
         this.engine.start();
     }
-
-    // other methods
 }
 
-class Engine {
+public class Engine {
     public void start() {
         System.out.println("Engine started");
     }
 
-    // other methods
 }
 
 public class CompositionExample {

@@ -1,4 +1,3 @@
-
 # JavaCodeBank
 
 JavaCodeBank is a repository that contains a collection of Java code examples and solutions for various programming problems. These examples are intended to serve as references and records for myself and other programmers.

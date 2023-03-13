@@ -1,0 +1,16 @@
+/*https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true
+*/
+
+(
+SELECT CITY, length(CITY) as len
+FROM STATION
+ORDER BY len, CITY 
+LIMIT 1
+)
+UNION
+(
+SELECT CITY, length(CITY) as len
+FROM STATION
+ORDER BY len DESC, CITY 
+LIMIT 1
+)

@@ -4,6 +4,8 @@ name VARCHAR(50),
 salary FLOAT
 );
 
+DESC emp;
+
 INSERT INTO emp (id, name, salary) VALUES 
 (1, 'John Smith', 5000.00),
 (2, 'Jane Doe', 6000.00),

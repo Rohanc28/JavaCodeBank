@@ -14,7 +14,7 @@ public class JDBC_Connect {
 		try {
 			//init
 			String SqlUsername = "system";
-			String SqlPassword = "Oracle4321";
+			String SqlPassword = "enter_your password";
 			String SqlUrl = "jdbc:oracle:thin:@localhost:1521:xe";
 			
 			Connection connection = null;

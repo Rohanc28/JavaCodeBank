@@ -12,4 +12,3 @@ JavaCodeBank is a repository that contains a collection of Java code examples an
 - [X] Day 7 : Threading, Synchronization
 - [X] Day 8 : SQL Queries
 - [ ] Day 9 : Oracle JDBC + Servlet Form
-- [ ] Day 10:

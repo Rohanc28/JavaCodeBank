@@ -11,6 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class RegisterServlet extends HttpServlet {
 	@Override 
 	protected void doGet (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
+		/*temporarily enabled / we do not want to send form data through GET method*/
 		PrintWriter pw =res.getWriter();
 		res.setContentType("text/html");
 		String name = req.getParameter("name");
@@ -24,11 +25,23 @@ public class RegisterServlet extends HttpServlet {
 		pw.println("gender: "+gender+"<br>");
 		pw.println("level: "+level+"<br>");
 		pw.close();
-		
+		/*temporarily enabled / we do not want to send form data through GET method*/
 	}
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-		doGet(req,res);
+		PrintWriter pw =res.getWriter();
+		res.setContentType("text/html");
+		String name = req.getParameter("name");
+		String dob = req.getParameter("dob");
+		String email = req.getParameter("email");
+		String gender = req.getParameter("gender");
+		String level = req.getParameter("level");
+		pw.println("name: "+name+"<br>");
+		pw.println("dob: "+dob+"<br>");
+		pw.println("email: "+email+"<br>");
+		pw.println("gender: "+gender+"<br>");
+		pw.println("level: "+level+"<br>");
+		pw.close();
 	}
 
 
